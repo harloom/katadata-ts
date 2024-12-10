@@ -5,8 +5,16 @@ Use: Flutter 3.16.9
 ## How to Setup ENV
 
 1. add File .env and .env.dev
+
+DEV - SAMPLE
 ```
 APP=DEV
+BASE_URL=https://jsonplaceholder.typicode.com
+
+```
+PRODUCTION - SAMPLE
+```
+APP=PRODUCTION
 BASE_URL=https://jsonplaceholder.typicode.com
 
 ```
