@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.harloom.dev.ilham_kata_data_test"
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -48,6 +48,26 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+        }
+    }
+    flavorDimensions "app"
+
+    productFlavors {
+        development {
+            dimension "app"
+            resValue "string", "app_name", "News Development"
+            versionNameSuffix "-dev"
+            applicationIdSuffix ".dev"
+        }
+        uat {
+            dimension "app"
+            resValue "string", "app_name", "News Uat"
+            versionNameSuffix "-uat"
+            applicationIdSuffix ".uat"
+        }
+        production {
+            dimension "app"
+            resValue "string", "app_name", "News"
         }
     }
 }

@@ -1,16 +1,64 @@
-# ilham_kata_data_test
+# KATADATA-ILHAM_TEST
 
-A new Flutter project.
+Use: Flutter 3.16.9
 
-## Getting Started
+## How to Setup ENV
 
-This project is a starting point for a Flutter application.
+1. add File .env and .env.dev
+```
+APP=DEV
+BASE_URL=https://jsonplaceholder.typicode.com
 
-A few resources to get you started if this is your first Flutter project:
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# How to run the App
+
+1. Development
+```
+make run-dev
+
+or 
+
+flutter run --flavor development -t lib/main_dev.dart
+
+```
+
+2. Production
+```
+make run-prod
+
+or 
+
+flutter run --flavor production -t lib/main.dart
+
+```
+
+# How to build the App
+1. Development
+```
+make build-apk-dev
+
+or 
+
+flutter build apk --release --flavor development -t lib/main_dev.dart
+flutter build apk --release --flavor development -t lib/main.dart
+
+```
+
+2. Production
+```
+make build-apk-prod
+
+or 
+
+flutter build apk --release --flavor production -t lib/main.dart
+flutter build appbundle --flavor production --target=lib/main.dart
+
+```
+
+![Alt text](screenshoot/1.png?raw=true "1")
+![Alt text](screenshoot/2.png?raw=true "2")
+![Alt text](screenshoot/3.png?raw=true "3")
+![Alt text](screenshoot/4.png?raw=true "4")
+![Alt text](screenshoot/5.png?raw=true "5")
