@@ -50,7 +50,7 @@ make build-apk-dev
 or 
 
 flutter build apk --release --flavor development -t lib/main_dev.dart
-flutter build apk --release --flavor f -t lib/main.dart
+flutter build apk --release --flavor development -t lib/main.dart
 
 ```
 
